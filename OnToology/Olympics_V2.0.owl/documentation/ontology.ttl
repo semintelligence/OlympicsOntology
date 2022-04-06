@@ -1,0 +1,234 @@
+@prefix : <http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#> .
+
+<http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#hasContinent
+:hasContinent rdf:type owl:ObjectProperty ;
+              rdfs:domain <http://dbpedia.org/ontology/Country> ;
+              rdfs:range <http://dbpedia.org/ontology/Continent> .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#hasEvent
+:hasEvent rdf:type owl:ObjectProperty ;
+          rdfs:domain :Sport ;
+          rdfs:range :Event .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#hasGender
+:hasGender rdf:type owl:ObjectProperty ;
+           rdfs:domain :Athelete ;
+           rdfs:range <http://xmlns.com/foaf/0.1/gender> .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#hasNationality
+:hasNationality rdf:type owl:ObjectProperty ;
+                rdfs:domain :Athelete ;
+                rdfs:range <http://dbpedia.org/ontology/Country> .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#hasSeason
+:hasSeason rdf:type owl:ObjectProperty ;
+           rdfs:domain :Game ;
+           rdfs:range :Season .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#heldIn
+:heldIn rdf:type owl:ObjectProperty ;
+        rdfs:domain :Game ;
+        rdfs:range <http://dbpedia.org/ontology/City> .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#heldInYear
+:heldInYear rdf:type owl:ObjectProperty ;
+            rdfs:domain :Game ;
+            rdfs:range <http://dbpedia.org/ontology/Year> .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#memberOf
+:memberOf rdf:type owl:ObjectProperty ;
+          rdfs:domain <http://dbpedia.org/ontology/Country> ;
+          rdfs:range <http://dbpedia.org/ontology/NOC> .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#participatedIn
+:participatedIn rdf:type owl:ObjectProperty ;
+                rdfs:domain :Athelete ;
+                rdfs:range :Game .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#participatedInSports
+:participatedInSports rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Athelete ;
+                      rdfs:range :Sport .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#represents
+:represents rdf:type owl:ObjectProperty ;
+            rdfs:domain :instance ;
+            rdfs:range :Athelete .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#wonMedal
+:wonMedal rdf:type owl:ObjectProperty ;
+          rdfs:domain :Athelete ;
+          rdfs:range :Medal .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#countryName
+:countryName rdf:type owl:DatatypeProperty ;
+             rdfs:domain <http://dbpedia.org/ontology/Country> ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#gender
+:gender rdf:type owl:DatatypeProperty ;
+        rdfs:domain <http://xmlns.com/foaf/0.1/gender> ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#hasAge
+:hasAge rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdfs:domain :Athelete ;
+        rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#hasEventName
+:hasEventName rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Event ;
+              rdfs:range rdfs:Literal .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#hasEventType
+:hasEventType rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Event ;
+              rdfs:range rdfs:Literal .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#hasGameName
+:hasGameName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Game ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#hasHeight
+:hasHeight rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :Athelete ;
+           rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#hasMedal
+:hasMedal rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Medal ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:domain :Athelete ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#hasSeasonName
+:hasSeasonName rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Season ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#hasSportName
+:hasSportName rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Sport ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#hasWeight
+:hasWeight rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :Athelete ;
+           rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#hasYear
+:hasYear rdf:type owl:DatatypeProperty ;
+         rdfs:domain <http://dbpedia.org/ontology/Year> ;
+         rdfs:range xsd:integer .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dbpedia.org/ontology/City
+<http://dbpedia.org/ontology/City> rdf:type owl:Class .
+
+
+###  http://dbpedia.org/ontology/Continent
+<http://dbpedia.org/ontology/Continent> rdf:type owl:Class .
+
+
+###  http://dbpedia.org/ontology/Country
+<http://dbpedia.org/ontology/Country> rdf:type owl:Class ;
+                                      owl:equivalentClass :Team .
+
+
+###  http://dbpedia.org/ontology/NOC
+<http://dbpedia.org/ontology/NOC> rdf:type owl:Class .
+
+
+###  http://dbpedia.org/ontology/Year
+<http://dbpedia.org/ontology/Year> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#Athelete
+:Athelete rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#Event
+:Event rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#Game
+:Game rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#Medal
+:Medal rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#Season
+:Season rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#Sport
+:Sport rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#Team
+:Team rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#instance
+:instance rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/gender
+<http://xmlns.com/foaf/0.1/gender> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
