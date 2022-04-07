@@ -303,14 +303,18 @@
     <!-- http://dbpedia.org/ontology/City -->
 
 
-    <owl:Class rdf:about="http://dbpedia.org/ontology/City"/>
+    <owl:Class rdf:about="http://dbpedia.org/ontology/City">
+        <rdfs:label xml:lang="en">City</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://dbpedia.org/ontology/Continent -->
 
 
-    <owl:Class rdf:about="http://dbpedia.org/ontology/Continent"/>
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Continent">
+        <rdfs:label xml:lang="en">Continent</rdfs:label>
+    </owl:Class>
     
 
 
@@ -319,6 +323,7 @@
 
     <owl:Class rdf:about="http://dbpedia.org/ontology/Country">
         <owl:equivalentClass rdf:resource="http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#Team"/>
+        <rdfs:label xml:lang="en">Country</rdfs:label>
     </owl:Class>
     
 
@@ -326,77 +331,99 @@
     <!-- http://dbpedia.org/ontology/NOC -->
 
 
-    <owl:Class rdf:about="http://dbpedia.org/ontology/NOC"/>
+    <owl:Class rdf:about="http://dbpedia.org/ontology/NOC">
+        <rdfs:label xml:lang="en">NOC</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://dbpedia.org/ontology/Year -->
 
 
-    <owl:Class rdf:about="http://dbpedia.org/ontology/Year"/>
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Year">
+        <rdfs:label xml:lang="en">Year</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#Athelete -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#Athelete"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#Athelete">
+        <rdfs:label xml:lang="en">Athlete</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#Event -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#Event"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#Event">
+        <rdfs:label xml:lang="en">Event</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#Game -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#Game"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#Game">
+        <rdfs:label xml:lang="en">Game</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#Medal -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#Medal"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#Medal">
+        <rdfs:label xml:lang="en">Medal</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#Season -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#Season"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#Season">
+        <rdfs:label xml:lang="en">Season</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#Sport -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#Sport"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#Sport">
+        <rdfs:label xml:lang="en">Sport</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#Team -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#Team"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#Team">
+        <rdfs:label xml:lang="en">Team</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#instance -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#instance"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#instance">
+        <rdfs:label xml:lang="en">instance</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/gender -->
 
 
-    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/gender"/>
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/gender">
+        <rdfs:label xml:lang="en">Gender</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
