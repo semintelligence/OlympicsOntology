@@ -25,6 +25,9 @@
       "@id" : "http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#hasSeasonName",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
     "hasMedal" : {
       "@id" : "http://www.semanticweb.org/pooja/ontologies/2022/3/untitled-ontology-35#hasMedal",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
