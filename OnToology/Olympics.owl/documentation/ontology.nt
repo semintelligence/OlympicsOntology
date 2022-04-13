@@ -1,0 +1,215 @@
+<https://w3id.org/def/OlympicsOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/OlympicsOntology#hasContinent
+<https://w3id.org/def/OlympicsOntology#hasContinent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/OlympicsOntology#hasContinent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://dbpedia.org/ontology/Country> .
+<https://w3id.org/def/OlympicsOntology#hasContinent> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/ontology/Continent> .
+# 
+# https://w3id.org/def/OlympicsOntology#hasEvent
+<https://w3id.org/def/OlympicsOntology#hasEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/OlympicsOntology#hasEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/OlympicsOntology#Sport> .
+<https://w3id.org/def/OlympicsOntology#hasEvent> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/OlympicsOntology#Event> .
+# 
+# https://w3id.org/def/OlympicsOntology#hasGender
+<https://w3id.org/def/OlympicsOntology#hasGender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/OlympicsOntology#hasGender> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/OlympicsOntology#Athelete> .
+<https://w3id.org/def/OlympicsOntology#hasGender> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/gender> .
+# 
+# https://w3id.org/def/OlympicsOntology#hasNationality
+<https://w3id.org/def/OlympicsOntology#hasNationality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/OlympicsOntology#hasNationality> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/OlympicsOntology#Athelete> .
+<https://w3id.org/def/OlympicsOntology#hasNationality> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/ontology/Country> .
+# 
+# https://w3id.org/def/OlympicsOntology#hasSeason
+<https://w3id.org/def/OlympicsOntology#hasSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/OlympicsOntology#hasSeason> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/OlympicsOntology#Game> .
+<https://w3id.org/def/OlympicsOntology#hasSeason> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/OlympicsOntology#Season> .
+# 
+# https://w3id.org/def/OlympicsOntology#heldIn
+<https://w3id.org/def/OlympicsOntology#heldIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/OlympicsOntology#heldIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/OlympicsOntology#Game> .
+<https://w3id.org/def/OlympicsOntology#heldIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/ontology/City> .
+# 
+# https://w3id.org/def/OlympicsOntology#heldInYear
+<https://w3id.org/def/OlympicsOntology#heldInYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/OlympicsOntology#heldInYear> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/OlympicsOntology#Game> .
+<https://w3id.org/def/OlympicsOntology#heldInYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/ontology/Year> .
+# 
+# https://w3id.org/def/OlympicsOntology#memberOf
+<https://w3id.org/def/OlympicsOntology#memberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/OlympicsOntology#memberOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://dbpedia.org/ontology/Country> .
+<https://w3id.org/def/OlympicsOntology#memberOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/ontology/NOC> .
+# 
+# https://w3id.org/def/OlympicsOntology#participatedIn
+<https://w3id.org/def/OlympicsOntology#participatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/OlympicsOntology#participatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/OlympicsOntology#Athelete> .
+<https://w3id.org/def/OlympicsOntology#participatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/OlympicsOntology#Game> .
+# 
+# https://w3id.org/def/OlympicsOntology#participatedInSports
+<https://w3id.org/def/OlympicsOntology#participatedInSports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/OlympicsOntology#participatedInSports> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/OlympicsOntology#Athelete> .
+<https://w3id.org/def/OlympicsOntology#participatedInSports> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/OlympicsOntology#Sport> .
+# 
+# https://w3id.org/def/OlympicsOntology#represents
+<https://w3id.org/def/OlympicsOntology#represents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/OlympicsOntology#represents> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/OlympicsOntology#instance> .
+<https://w3id.org/def/OlympicsOntology#represents> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/OlympicsOntology#Athelete> .
+# 
+# https://w3id.org/def/OlympicsOntology#wonMedal
+<https://w3id.org/def/OlympicsOntology#wonMedal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/OlympicsOntology#wonMedal> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/OlympicsOntology#Athelete> .
+<https://w3id.org/def/OlympicsOntology#wonMedal> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/OlympicsOntology#Medal> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/OlympicsOntology#countryName
+<https://w3id.org/def/OlympicsOntology#countryName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/OlympicsOntology#countryName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://dbpedia.org/ontology/Country> .
+<https://w3id.org/def/OlympicsOntology#countryName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/def/OlympicsOntology#gender
+<https://w3id.org/def/OlympicsOntology#gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/OlympicsOntology#gender> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/gender> .
+<https://w3id.org/def/OlympicsOntology#gender> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/def/OlympicsOntology#hasAge
+<https://w3id.org/def/OlympicsOntology#hasAge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/OlympicsOntology#hasAge> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/def/OlympicsOntology#hasAge> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/OlympicsOntology#Athelete> .
+<https://w3id.org/def/OlympicsOntology#hasAge> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# https://w3id.org/def/OlympicsOntology#hasEventName
+<https://w3id.org/def/OlympicsOntology#hasEventName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/OlympicsOntology#hasEventName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/OlympicsOntology#Event> .
+<https://w3id.org/def/OlympicsOntology#hasEventName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# https://w3id.org/def/OlympicsOntology#hasEventType
+<https://w3id.org/def/OlympicsOntology#hasEventType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/OlympicsOntology#hasEventType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/OlympicsOntology#Event> .
+<https://w3id.org/def/OlympicsOntology#hasEventType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# https://w3id.org/def/OlympicsOntology#hasGameName
+<https://w3id.org/def/OlympicsOntology#hasGameName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/OlympicsOntology#hasGameName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/OlympicsOntology#Game> .
+<https://w3id.org/def/OlympicsOntology#hasGameName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/def/OlympicsOntology#hasHeight
+<https://w3id.org/def/OlympicsOntology#hasHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/OlympicsOntology#hasHeight> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/def/OlympicsOntology#hasHeight> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/OlympicsOntology#Athelete> .
+<https://w3id.org/def/OlympicsOntology#hasHeight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# https://w3id.org/def/OlympicsOntology#hasMedal
+<https://w3id.org/def/OlympicsOntology#hasMedal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/OlympicsOntology#hasMedal> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/OlympicsOntology#Medal> .
+<https://w3id.org/def/OlympicsOntology#hasMedal> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/def/OlympicsOntology#hasName
+<https://w3id.org/def/OlympicsOntology#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/OlympicsOntology#hasName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/def/OlympicsOntology#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/OlympicsOntology#Athelete> .
+<https://w3id.org/def/OlympicsOntology#hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/def/OlympicsOntology#hasSeasonName
+<https://w3id.org/def/OlympicsOntology#hasSeasonName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/OlympicsOntology#hasSeasonName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/OlympicsOntology#Season> .
+<https://w3id.org/def/OlympicsOntology#hasSeasonName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/def/OlympicsOntology#hasSportName
+<https://w3id.org/def/OlympicsOntology#hasSportName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/OlympicsOntology#hasSportName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/OlympicsOntology#Sport> .
+<https://w3id.org/def/OlympicsOntology#hasSportName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/def/OlympicsOntology#hasWeight
+<https://w3id.org/def/OlympicsOntology#hasWeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/OlympicsOntology#hasWeight> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/def/OlympicsOntology#hasWeight> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/OlympicsOntology#Athelete> .
+<https://w3id.org/def/OlympicsOntology#hasWeight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# https://w3id.org/def/OlympicsOntology#hasYear
+<https://w3id.org/def/OlympicsOntology#hasYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/OlympicsOntology#hasYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://dbpedia.org/ontology/Year> .
+<https://w3id.org/def/OlympicsOntology#hasYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/ontology/City
+<http://dbpedia.org/ontology/City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/City> <http://www.w3.org/2000/01/rdf-schema#label> "City"@en .
+# 
+# http://dbpedia.org/ontology/Continent
+<http://dbpedia.org/ontology/Continent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/Continent> <http://www.w3.org/2000/01/rdf-schema#label> "Continent"@en .
+# 
+# http://dbpedia.org/ontology/Country
+<http://dbpedia.org/ontology/Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/Country> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/def/OlympicsOntology#Team> .
+<http://dbpedia.org/ontology/Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country"@en .
+# 
+# http://dbpedia.org/ontology/NOC
+<http://dbpedia.org/ontology/NOC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/NOC> <http://www.w3.org/2000/01/rdf-schema#label> "NOC"@en .
+# 
+# http://dbpedia.org/ontology/Year
+<http://dbpedia.org/ontology/Year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/Year> <http://www.w3.org/2000/01/rdf-schema#label> "Year"@en .
+# 
+# http://xmlns.com/foaf/0.1/gender
+<http://xmlns.com/foaf/0.1/gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/gender> <http://www.w3.org/2000/01/rdf-schema#label> "Gender"@en .
+# 
+# https://w3id.org/def/OlympicsOntology#Athelete
+<https://w3id.org/def/OlympicsOntology#Athelete> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/OlympicsOntology#Athelete> <http://www.w3.org/2000/01/rdf-schema#label> "Athlete"@en .
+# 
+# https://w3id.org/def/OlympicsOntology#Event
+<https://w3id.org/def/OlympicsOntology#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/OlympicsOntology#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event"@en .
+# 
+# https://w3id.org/def/OlympicsOntology#Game
+<https://w3id.org/def/OlympicsOntology#Game> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/OlympicsOntology#Game> <http://www.w3.org/2000/01/rdf-schema#label> "Game"@en .
+# 
+# https://w3id.org/def/OlympicsOntology#Medal
+<https://w3id.org/def/OlympicsOntology#Medal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/OlympicsOntology#Medal> <http://www.w3.org/2000/01/rdf-schema#label> "Medal"@en .
+# 
+# https://w3id.org/def/OlympicsOntology#Season
+<https://w3id.org/def/OlympicsOntology#Season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/OlympicsOntology#Season> <http://www.w3.org/2000/01/rdf-schema#label> "Season"@en .
+# 
+# https://w3id.org/def/OlympicsOntology#Sport
+<https://w3id.org/def/OlympicsOntology#Sport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/OlympicsOntology#Sport> <http://www.w3.org/2000/01/rdf-schema#label> "Sport"@en .
+# 
+# https://w3id.org/def/OlympicsOntology#Team
+<https://w3id.org/def/OlympicsOntology#Team> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/OlympicsOntology#Team> <http://www.w3.org/2000/01/rdf-schema#label> "Team"@en .
+# 
+# https://w3id.org/def/OlympicsOntology#instance
+<https://w3id.org/def/OlympicsOntology#instance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/OlympicsOntology#instance> <http://www.w3.org/2000/01/rdf-schema#label> "instance"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
