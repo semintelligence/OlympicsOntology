@@ -1,0 +1,248 @@
+@prefix : <https://w3id.org/def/OlympicsOntology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/def/OlympicsOntology#> .
+
+<https://w3id.org/def/OlympicsOntology> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/def/OlympicsOntology#hasContinent
+:hasContinent rdf:type owl:ObjectProperty ;
+              rdfs:domain <http://dbpedia.org/ontology/Country> ;
+              rdfs:range <http://dbpedia.org/ontology/Continent> .
+
+
+###  https://w3id.org/def/OlympicsOntology#hasEvent
+:hasEvent rdf:type owl:ObjectProperty ;
+          rdfs:domain :Sport ;
+          rdfs:range :Event .
+
+
+###  https://w3id.org/def/OlympicsOntology#hasGender
+:hasGender rdf:type owl:ObjectProperty ;
+           rdfs:domain :Athelete ;
+           rdfs:range <http://xmlns.com/foaf/0.1/gender> .
+
+
+###  https://w3id.org/def/OlympicsOntology#hasNationality
+:hasNationality rdf:type owl:ObjectProperty ;
+                rdfs:domain :Athelete ;
+                rdfs:range <http://dbpedia.org/ontology/Country> .
+
+
+###  https://w3id.org/def/OlympicsOntology#hasSeason
+:hasSeason rdf:type owl:ObjectProperty ;
+           rdfs:domain :Game ;
+           rdfs:range :Season .
+
+
+###  https://w3id.org/def/OlympicsOntology#heldIn
+:heldIn rdf:type owl:ObjectProperty ;
+        rdfs:domain :Game ;
+        rdfs:range <http://dbpedia.org/ontology/City> .
+
+
+###  https://w3id.org/def/OlympicsOntology#heldInYear
+:heldInYear rdf:type owl:ObjectProperty ;
+            rdfs:domain :Game ;
+            rdfs:range <http://dbpedia.org/ontology/Year> .
+
+
+###  https://w3id.org/def/OlympicsOntology#memberOf
+:memberOf rdf:type owl:ObjectProperty ;
+          rdfs:domain <http://dbpedia.org/ontology/Country> ;
+          rdfs:range <http://dbpedia.org/ontology/NOC> .
+
+
+###  https://w3id.org/def/OlympicsOntology#participatedIn
+:participatedIn rdf:type owl:ObjectProperty ;
+                rdfs:domain :Athelete ;
+                rdfs:range :Game .
+
+
+###  https://w3id.org/def/OlympicsOntology#participatedInSports
+:participatedInSports rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Athelete ;
+                      rdfs:range :Sport .
+
+
+###  https://w3id.org/def/OlympicsOntology#represents
+:represents rdf:type owl:ObjectProperty ;
+            rdfs:domain :instance ;
+            rdfs:range :Athelete .
+
+
+###  https://w3id.org/def/OlympicsOntology#wonMedal
+:wonMedal rdf:type owl:ObjectProperty ;
+          rdfs:domain :Athelete ;
+          rdfs:range :Medal .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/def/OlympicsOntology#countryName
+:countryName rdf:type owl:DatatypeProperty ;
+             rdfs:domain <http://dbpedia.org/ontology/Country> ;
+             rdfs:range xsd:string .
+
+
+###  https://w3id.org/def/OlympicsOntology#gender
+:gender rdf:type owl:DatatypeProperty ;
+        rdfs:domain <http://xmlns.com/foaf/0.1/gender> ;
+        rdfs:range xsd:string .
+
+
+###  https://w3id.org/def/OlympicsOntology#hasAge
+:hasAge rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdfs:domain :Athelete ;
+        rdfs:range xsd:integer .
+
+
+###  https://w3id.org/def/OlympicsOntology#hasEventName
+:hasEventName rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Event ;
+              rdfs:range rdfs:Literal .
+
+
+###  https://w3id.org/def/OlympicsOntology#hasEventType
+:hasEventType rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Event ;
+              rdfs:range rdfs:Literal .
+
+
+###  https://w3id.org/def/OlympicsOntology#hasGameName
+:hasGameName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Game ;
+             rdfs:range xsd:string .
+
+
+###  https://w3id.org/def/OlympicsOntology#hasHeight
+:hasHeight rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :Athelete ;
+           rdfs:range xsd:integer .
+
+
+###  https://w3id.org/def/OlympicsOntology#hasMedal
+:hasMedal rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Medal ;
+          rdfs:range xsd:string .
+
+
+###  https://w3id.org/def/OlympicsOntology#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:domain :Athelete ;
+         rdfs:range xsd:string .
+
+
+###  https://w3id.org/def/OlympicsOntology#hasSeasonName
+:hasSeasonName rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Season ;
+               rdfs:range xsd:string .
+
+
+###  https://w3id.org/def/OlympicsOntology#hasSportName
+:hasSportName rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Sport ;
+              rdfs:range xsd:string .
+
+
+###  https://w3id.org/def/OlympicsOntology#hasWeight
+:hasWeight rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :Athelete ;
+           rdfs:range xsd:integer .
+
+
+###  https://w3id.org/def/OlympicsOntology#hasYear
+:hasYear rdf:type owl:DatatypeProperty ;
+         rdfs:domain <http://dbpedia.org/ontology/Year> ;
+         rdfs:range xsd:integer .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dbpedia.org/ontology/City
+<http://dbpedia.org/ontology/City> rdf:type owl:Class ;
+                                   rdfs:label "City"@en .
+
+
+###  http://dbpedia.org/ontology/Continent
+<http://dbpedia.org/ontology/Continent> rdf:type owl:Class ;
+                                        rdfs:label "Continent"@en .
+
+
+###  http://dbpedia.org/ontology/Country
+<http://dbpedia.org/ontology/Country> rdf:type owl:Class ;
+                                      owl:equivalentClass :Team ;
+                                      rdfs:label "Country"@en .
+
+
+###  http://dbpedia.org/ontology/NOC
+<http://dbpedia.org/ontology/NOC> rdf:type owl:Class ;
+                                  rdfs:label "NOC"@en .
+
+
+###  http://dbpedia.org/ontology/Year
+<http://dbpedia.org/ontology/Year> rdf:type owl:Class ;
+                                   rdfs:label "Year"@en .
+
+
+###  http://xmlns.com/foaf/0.1/gender
+<http://xmlns.com/foaf/0.1/gender> rdf:type owl:Class ;
+                                   rdfs:label "Gender"@en .
+
+
+###  https://w3id.org/def/OlympicsOntology#Athelete
+:Athelete rdf:type owl:Class ;
+          rdfs:label "Athlete"@en .
+
+
+###  https://w3id.org/def/OlympicsOntology#Event
+:Event rdf:type owl:Class ;
+       rdfs:label "Event"@en .
+
+
+###  https://w3id.org/def/OlympicsOntology#Game
+:Game rdf:type owl:Class ;
+      rdfs:label "Game"@en .
+
+
+###  https://w3id.org/def/OlympicsOntology#Medal
+:Medal rdf:type owl:Class ;
+       rdfs:label "Medal"@en .
+
+
+###  https://w3id.org/def/OlympicsOntology#Season
+:Season rdf:type owl:Class ;
+        rdfs:label "Season"@en .
+
+
+###  https://w3id.org/def/OlympicsOntology#Sport
+:Sport rdf:type owl:Class ;
+       rdfs:label "Sport"@en .
+
+
+###  https://w3id.org/def/OlympicsOntology#Team
+:Team rdf:type owl:Class ;
+      rdfs:label "Team"@en .
+
+
+###  https://w3id.org/def/OlympicsOntology#instance
+:instance rdf:type owl:Class ;
+          rdfs:label "instance"@en .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
