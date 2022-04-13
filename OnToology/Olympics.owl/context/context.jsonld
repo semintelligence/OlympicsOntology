@@ -1,0 +1,149 @@
+{
+  "@context" : {
+    "wonMedal" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#wonMedal",
+      "@type" : "@id"
+    },
+    "Country" : {
+      "@id" : "http://dbpedia.org/ontology/Country"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "hasName" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#hasName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasEvent" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#hasEvent",
+      "@type" : "@id"
+    },
+    "Sport" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#Sport"
+    },
+    "hasSeasonName" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#hasSeasonName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasMedal" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#hasMedal",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "countryName" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#countryName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "gender" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#gender",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Event" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#Event"
+    },
+    "hasContinent" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#hasContinent",
+      "@type" : "@id"
+    },
+    "hasAge" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#hasAge",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasGender" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#hasGender",
+      "@type" : "@id"
+    },
+    "hasNationality" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#hasNationality",
+      "@type" : "@id"
+    },
+    "hasSportName" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#hasSportName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "heldInYear" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#heldInYear",
+      "@type" : "@id"
+    },
+    "hasEventName" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#hasEventName",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "hasHeight" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#hasHeight",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Team" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#Team"
+    },
+    "instance" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#instance"
+    },
+    "represents" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#represents",
+      "@type" : "@id"
+    },
+    "hasGameName" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#hasGameName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "NOC" : {
+      "@id" : "http://dbpedia.org/ontology/NOC"
+    },
+    "Athelete" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#Athelete"
+    },
+    "Year" : {
+      "@id" : "http://dbpedia.org/ontology/Year"
+    },
+    "Continent" : {
+      "@id" : "http://dbpedia.org/ontology/Continent"
+    },
+    "Game" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#Game"
+    },
+    "City" : {
+      "@id" : "http://dbpedia.org/ontology/City"
+    },
+    "heldIn" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#heldIn",
+      "@type" : "@id"
+    },
+    "Medal" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#Medal"
+    },
+    "memberOf" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#memberOf",
+      "@type" : "@id"
+    },
+    "hasYear" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#hasYear",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "participatedInSports" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#participatedInSports",
+      "@type" : "@id"
+    },
+    "Season" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#Season"
+    },
+    "hasWeight" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#hasWeight",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasEventType" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#hasEventType",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "participatedIn" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#participatedIn",
+      "@type" : "@id"
+    },
+    "hasSeason" : {
+      "@id" : "https://w3id.org/def/OlympicsOntology#hasSeason",
+      "@type" : "@id"
+    }
+  }
+}
