@@ -1,0 +1,36 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:Medal" "base:Sport" "http://dbpedia.org/ontology/Continent" "base:Team" "base:Game" "http://dbpedia.org/ontology/City" "base:Season" "http://dbpedia.org/ontology/Country" "http://xmlns.com/foaf/0.1/gender" "base:Athelete" "base:instance" "http://dbpedia.org/ontology/NOC" "base:Event" "http://dbpedia.org/ontology/Year" ; /*classes style*/
+	"base:hasWeight" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:hasAge" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:hasName" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"http://dbpedia.org/ontology/Country" -> "base:Team" [ label = "owl:equivalentClass" ];
+	"base:hasHeight" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:Athelete" -> "base:Game" [ label = "base:participatedIn" ];
+	"base:instance" -> "base:Athelete" [ label = "base:represents" ];
+	"http://dbpedia.org/ontology/Country" -> "http://dbpedia.org/ontology/NOC" [ label = "base:memberOf" ];
+	"base:Athelete" -> "xsd:integer" [ label = "base:hasAge" ];
+	"base:Event" -> "rdfs:Literal" [ label = "base:hasEventType" ];
+	"http://dbpedia.org/ontology/Country" -> "xsd:string" [ label = "base:countryName" ];
+	"base:Athelete" -> "xsd:integer" [ label = "base:hasHeight" ];
+	"http://dbpedia.org/ontology/Year" -> "xsd:integer" [ label = "base:hasYear" ];
+	"base:Sport" -> "xsd:string" [ label = "base:hasSportName" ];
+	"base:Game" -> "base:Season" [ label = "base:hasSeason" ];
+	"base:Game" -> "http://dbpedia.org/ontology/Year" [ label = "base:heldInYear" ];
+	"base:Medal" -> "xsd:string" [ label = "base:hasMedal" ];
+	"base:Athelete" -> "base:Medal" [ label = "base:wonMedal" ];
+	"base:Athelete" -> "xsd:integer" [ label = "base:hasWeight" ];
+	"base:Athelete" -> "http://dbpedia.org/ontology/Country" [ label = "base:hasNationality" ];
+	"base:Athelete" -> "xsd:string" [ label = "base:hasName" ];
+	"base:Sport" -> "base:Event" [ label = "base:hasEvent" ];
+	"http://xmlns.com/foaf/0.1/gender" -> "xsd:string" [ label = "base:gender" ];
+	"base:Athelete" -> "base:Sport" [ label = "base:participatedInSports" ];
+	"base:Game" -> "xsd:string" [ label = "base:hasGameName" ];
+	"base:Game" -> "http://dbpedia.org/ontology/City" [ label = "base:heldIn" ];
+	"base:Athelete" -> "http://xmlns.com/foaf/0.1/gender" [ label = "base:hasGender" ];
+	"http://dbpedia.org/ontology/Country" -> "http://dbpedia.org/ontology/Continent" [ label = "base:hasContinent" ];
+	"base:Season" -> "xsd:string" [ label = "base:hasSeasonName" ];
+	"base:Event" -> "rdfs:Literal" [ label = "base:hasEventName" ];
+
+}

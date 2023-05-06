@@ -1,0 +1,679 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/def/OlympicsOntology", "http://www.w3.org/2001/XMLSchema", "http://dbpedia.org/ontology", "http://xmlns.com/foaf/0.1" ],
+    "iri" : "https://w3id.org/def/OlympicsOntology"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "32",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://dbpedia.org/ontology/City",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "City",
+      "en" : "City"
+    },
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#Medal",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Medal",
+      "en" : "Medal"
+    },
+    "id" : "4"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#Athelete",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Athelete",
+      "en" : "Athlete"
+    },
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#Event",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event",
+      "en" : "Event"
+    },
+    "id" : "6"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/gender",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "gender",
+      "en" : "Gender"
+    },
+    "attributes" : [ "external" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#Season",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Season",
+      "en" : "Season"
+    },
+    "id" : "11"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "32",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "35",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://dbpedia.org/ontology/Country",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Country",
+      "en" : "Country"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://dbpedia.org/ontology/Continent",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Continent",
+      "en" : "Continent"
+    },
+    "attributes" : [ "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#Sport",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sport",
+      "en" : "Sport"
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://dbpedia.org/ontology/NOC",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NOC",
+      "en" : "NOC"
+    },
+    "attributes" : [ "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#Game",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Game",
+      "en" : "Game"
+    },
+    "id" : "9"
+  }, {
+    "iri" : "http://dbpedia.org/ontology/Year",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Year",
+      "en" : "Year"
+    },
+    "attributes" : [ "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#Team",
+    "equivalent" : [ "21" ],
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Team",
+      "en" : "Team"
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#instance",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "instance",
+      "en" : "instance"
+    },
+    "id" : "34"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/def/OlympicsOntology#participatedInSports",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "participatedInSports"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#wonMedal",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "wonMedal"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#hasEventType",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasEventType"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#participatedIn",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "participatedIn"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#hasSeasonName",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasSeasonName"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#hasYear",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasYear"
+    },
+    "domain" : "15",
+    "attributes" : [ "datatype" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#hasName",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "hasName"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#heldIn",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "heldIn"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#memberOf",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "memberOf"
+    },
+    "domain" : "21",
+    "attributes" : [ "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#hasEventName",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasEventName"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#hasWeight",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "hasWeight"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#hasGender",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "hasGender"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#hasContinent",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "hasContinent"
+    },
+    "domain" : "21",
+    "attributes" : [ "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#represents",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "represents"
+    },
+    "domain" : "34",
+    "attributes" : [ "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#hasMedal",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "hasMedal"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "36"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#hasEvent",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasEvent"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#hasSeason",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasSeason"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#hasHeight",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasHeight"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#hasAge",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "hasAge"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#gender",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "gender"
+    },
+    "domain" : "27",
+    "attributes" : [ "datatype" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#hasSportName",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "hasSportName"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "48"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#hasGameName",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "hasGameName"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#hasNationality",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasNationality"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#countryName",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "countryName"
+    },
+    "domain" : "21",
+    "attributes" : [ "datatype" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://w3id.org/def/OlympicsOntology#heldInYear",
+    "baseIri" : "https://w3id.org/def/OlympicsOntology",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "heldInYear"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "32",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "53"
+  } ]
+}
